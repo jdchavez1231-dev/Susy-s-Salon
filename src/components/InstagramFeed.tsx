@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { Instagram, Heart, MessageCircle } from 'lucide-react';
+import { useLanguage } from '../LanguageContext';
 
 const INSTAGRAM_POSTS = [
   { id: '1', url: 'https://images.unsplash.com/photo-1562322140-8baeececf3df?q=80&w=800', likes: '124', comments: '12' },
@@ -11,22 +12,23 @@ const INSTAGRAM_POSTS = [
 ];
 
 export default function InstagramFeed() {
+  const { t } = useLanguage();
   return (
     <section className="bg-white py-24 border-b border-brand-border">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
           <div>
-            <span className="text-brand-accent uppercase tracking-[0.4em] text-[10px] font-bold block mb-4">Social Feed</span>
-            <h2 className="text-5xl md:text-7xl font-serif italic mb-0">Follow Us @danna_beauty</h2>
+            <span className="text-brand-accent uppercase tracking-[0.4em] text-[10px] font-bold block mb-4">{t.instagram.label}</span>
+            <h2 className="text-5xl md:text-7xl font-serif italic mb-0">{t.instagram.heading}</h2>
           </div>
-          <a 
-            href="https://instagram.com" 
-            target="_blank" 
+          <a
+            href="https://instagram.com"
+            target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-3 text-[10px] uppercase tracking-[0.2em] font-bold text-brand-dark hover:text-brand-accent transition-colors border border-brand-border px-8 py-4 mb-2"
           >
             <Instagram className="w-4 h-4" />
-            Visit Profile
+            {t.instagram.visitProfile}
           </a>
         </div>
 
@@ -65,9 +67,9 @@ export default function InstagramFeed() {
         </div>
 
         <div className="mt-12 text-center">
-            <p className="text-[10px] uppercase tracking-[0.3em] font-bold text-brand-dark/30">
-               Live Updates from our North Las Vegas Studio
-            </p>
+          <p className="text-[10px] uppercase tracking-[0.3em] font-bold text-brand-dark/30">
+            {t.instagram.liveUpdates}
+          </p>
         </div>
       </div>
     </section>

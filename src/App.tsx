@@ -3,6 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
+import { LanguageProvider } from './LanguageContext';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Services from './components/Services';
@@ -14,18 +15,18 @@ import Footer from './components/Footer';
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-brand-bg selection:bg-brand-accent selection:text-white uppercase-not-serif">
+    <LanguageProvider>
       <Navbar />
       <main>
         <Hero />
         <Services />
         <Portfolio />
-        <InstagramFeed />
         <Testimonials />
+        <InstagramFeed />
         <Contact />
       </main>
       <Footer />
-    </div>
+    </LanguageProvider>
   );
 }
 
