@@ -21,8 +21,8 @@ export default function Contact() {
               <div className="w-1 px-8 border-l border-brand-accent h-auto">
                 <h4 className="font-bold uppercase tracking-[0.3em] text-[10px] mb-3 text-brand-accent">Address</h4>
                 <p className="text-sm text-brand-dark/70 transition-colors hover:text-brand-accent cursor-pointer leading-relaxed">
-                  North Las Vegas, NV 89032<br />
-                  (Specific address provided upon booking)
+                  2017 Ellis St<br />
+                  North Las Vegas, NV 89030
                 </p>
               </div>
             </div>
@@ -30,8 +30,8 @@ export default function Contact() {
             <div className="flex items-start gap-8">
               <div className="w-1 px-8 border-l border-brand-accent h-auto">
                 <h4 className="font-bold uppercase tracking-[0.3em] text-[10px] mb-3 text-brand-accent">Direct Line</h4>
-                <a href="tel:+17020000000" className="text-sm text-brand-dark/70 transition-colors hover:text-brand-accent block leading-relaxed">
-                  (702) 000-0000
+                <a href="tel:+17025411033" className="text-sm text-brand-dark/70 transition-colors hover:text-brand-accent block leading-relaxed">
+                  (702) 541-1033
                 </a>
                 <p className="text-[10px] text-brand-dark/40 mt-1 uppercase font-bold tracking-widest">Walk-ins Welcome!</p>
               </div>
