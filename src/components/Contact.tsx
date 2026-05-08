@@ -18,8 +18,8 @@ export default function Contact() {
 
           <div className="space-y-12">
             <div className="flex items-start gap-8">
-              <div className="w-1 px-8 border-l border-brand-accent h-auto">
-                <h4 className="font-bold uppercase tracking-[0.3em] text-[10px] mb-3 text-brand-accent">{t.contact.address}</h4>
+              <div className="px-8 border-l border-brand-accent">
+                <h4 className="font-bold uppercase tracking-[0.3em] text-[10px] mb-3 text-brand-accent whitespace-nowrap">{t.contact.address}</h4>
                 <p className="text-sm text-brand-dark/70 transition-colors hover:text-brand-accent cursor-pointer leading-relaxed">
                   2017 Ellis St<br />
                   North Las Vegas, NV 89030
@@ -28,8 +28,8 @@ export default function Contact() {
             </div>
 
             <div className="flex items-start gap-8">
-              <div className="w-1 px-8 border-l border-brand-accent h-auto">
-                <h4 className="font-bold uppercase tracking-[0.3em] text-[10px] mb-3 text-brand-accent">{t.contact.directLine}</h4>
+              <div className="px-8 border-l border-brand-accent">
+                <h4 className="font-bold uppercase tracking-[0.3em] text-[10px] mb-3 text-brand-accent whitespace-nowrap">{t.contact.directLine}</h4>
                 <a href="tel:+17025411033" className="text-sm text-brand-dark/70 transition-colors hover:text-brand-accent block leading-relaxed">
                   (702) 541-1033
                 </a>
@@ -38,8 +38,8 @@ export default function Contact() {
             </div>
 
             <div className="flex items-start gap-8">
-              <div className="w-1 px-8 border-l border-brand-accent h-auto">
-                <h4 className="font-bold uppercase tracking-[0.3em] text-[10px] mb-3 text-brand-accent">{t.contact.hours}</h4>
+              <div className="px-8 border-l border-brand-accent">
+                <h4 className="font-bold uppercase tracking-[0.3em] text-[10px] mb-3 text-brand-accent whitespace-nowrap">{t.contact.address}</h4>
                 <ul className="text-sm text-brand-dark/70 space-y-2">
                   <li className="flex justify-between w-64 border-b border-brand-border/50 pb-1"><span>{t.contact.monFri}</span> <span>9:00 AM - 7:00 PM</span></li>
                   <li className="flex justify-between w-64 border-b border-brand-border/50 pb-1 font-bold text-brand-dark"><span>{t.contact.saturday}</span> <span>9:00 AM - 6:00 PM</span></li>
